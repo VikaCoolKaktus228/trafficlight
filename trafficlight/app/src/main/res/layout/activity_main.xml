@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/red"
+        android:layout_width="122dp"
+        android:layout_height="130dp"
+        android:background="#EA0F0F"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="81dp"
+        tools:srcCompat="#00CC0000" />
+
+    <ImageView
+        android:id="@+id/yellow"
+        android:layout_width="124dp"
+        android:layout_height="128dp"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="242dp"
+        tools:srcCompat="#00FFBB33" />
+
+    <ImageView
+        android:id="@+id/green"
+        android:layout_width="130dp"
+        android:layout_height="128dp"
+        android:background="#939391"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="401dp"
+        tools:srcCompat="#00669900" />
+
+    <Button
+        android:id="@+id/buttonred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="625dp" />
+
+    <Button
+        android:id="@+id/buttonyellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:onClick="switchcolor"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="625dp" />
+
+    <Button
+        android:id="@+id/buttongreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="625dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
